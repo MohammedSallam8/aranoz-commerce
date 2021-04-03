@@ -1,0 +1,119 @@
+.Footer{
+  display: flex;
+  padding: 130px 0 25px;
+
+  .row{
+    justify-content: unset;
+
+    .col-sm-6{
+      h4{
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+      ul{
+
+        li{
+
+          a{
+            color: #7f7f7f;
+            margin-bottom: 10px;
+            display: inline-block;
+            transition: .5s;
+            
+            &:hover{
+              color: #ff3368;
+            }
+          }
+        }
+      }
+
+      p{
+        font-size: 15px;
+        line-height: 2;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: 300;
+        padding: 0;
+      }
+      .email{
+        position: relative;
+
+        input{
+          padding: 20px 15px;
+          font-size: 13px;
+          border-radius: 5px;
+          border: 0 solid transparent;
+          margin-top: 20px;
+          width: 80%;
+          background-color: #f9f9fe;
+        }
+        button{
+          position: absolute;
+          padding: 12px 25px;
+          background-color: #ff3368;
+          text-align: center;
+          right: 0;
+          bottom: 12px;
+          color: #fff;
+          border-radius: 5px;
+          line-height: 10px;
+          border: 2px solid #ff3368;
+        }
+      }
+      &:last-child{
+        margin-bottom: 10px;
+      }
+    }
+    .col-lg-12{
+      margin-top: 45px;
+      .col-lg-8{
+        display: block;
+
+        p{
+          color: #888;
+          line-height: 2;
+          padding: 0;
+          margin: 0;
+
+          a{
+            color: #ff3368;
+          }
+        }
+        
+        @media (max-width: 991px){
+          display: flex;
+          text-align: center;
+        }
+      }
+    }
+
+    .last{
+      text-align: right;
+
+      ul{
+        display: inline-flex;
+        margin-bottom: 0;
+
+        a{
+          font-size: 14px;
+          color: #7f7f7f;
+          padding: 5px 11px;
+          transition: .5s;
+
+          &:hover{
+            color: #fff;
+            background-color: #ff3368;
+          }
+        }
+      }
+      
+      @media (max-width: 991px){
+        text-align: center;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+    justify-content: flex-start!important;
+  }
+}

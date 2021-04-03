@@ -1,0 +1,90 @@
+.Subscribe{
+  background-image: url(./subscribe_area.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+
+  .container{
+
+    .row{
+      justify-content: center;
+
+      .col-lg-7{
+        
+        .SupText{
+          text-align: center;
+
+          h5{
+            font-size: 14px;
+            font-weight: 400;
+            color: #ff3368;
+            letter-spacing: 2px;
+          }
+          h2{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            margin: 35px 0 67px;
+
+            @media (max-width: 991px){
+              font-size: 30px;
+              line-height: 35px;
+              margin: 15px 0 30px;
+            }
+          }
+          .input{
+            display: flex;
+
+            input{
+                height: 60px;
+                padding-left: 25px;
+                border: 0 solid transparent;
+                background-color: #fff;
+                width: -webkit-fill-available;
+            }
+            .btn2{
+              font-size: 15px;
+              font-weight: 500;
+              height: 60px;
+              line-height: 60px;
+              padding: 0 10px;
+              background-color: #ff3368;
+              color: #fff;
+              border-radius: 5px;
+              margin-left: 10px;
+              width: 221px;
+              background-size: 200% auto;
+              background-image: linear-gradient(16deg,#ff005a 0%,#ff5d2d 64%,#ffba00 100%);
+              transition: ease-in-out 0.5s;
+
+              @media (max-width:576px){
+                padding: 0;
+                margin-top: 30px!important;
+                line-height: 30px;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              &:hover{
+                background-position:right center;
+              }
+            }
+            @media (max-width:576px){
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px){
+    padding: 100px 0;
+  }
+  @media (max-width: 576px) and (max-width: 991px){
+    padding: 70px 0;
+  }
+}

@@ -1,0 +1,204 @@
+.Navbar{
+        background-color: transparent!important;
+        justify-content: space-between;
+        z-index: 1;
+        padding: 0;
+
+        .navCollapse{
+          flex-grow: 0;
+
+          .midNav{
+            
+            .navLinks{
+
+              list-style: none;
+	            position: relative;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: space-around;
+
+              .dropdwon-After{
+                &::after{
+                  display: inline-block;
+                  margin-left: .255em;
+                  vertical-align: .255em;
+                  content: "";
+                  border-top: .3em solid;
+                  border-right: .3em solid transparent;
+                  border-bottom: 0;
+                  border-left: .3em solid transparent;
+                }
+              }
+
+              li{
+                display: inline-block!important;
+
+                a {
+                  display:block;
+                  padding:36px 23px;	
+                  color:#000;
+                  font-size:16px;
+                  line-height: 12px;
+                  text-decoration:none;
+                  font-weight: 400;
+                  letter-spacing: 2px;
+                }
+
+                &:hover .dropdwon {
+                display: inherit;
+                transition: ease-in-out 5s;
+                animation: dropdwon .5s;
+                }
+
+                &:hover .tallOne {
+                  display: inherit;
+                  animation: dropdwon2 .7s;
+                }
+
+                .dropdwon,.tallOne{
+                  display: none;
+                  position: absolute;
+                  transition: ease-in-out 5s;
+                  background-color: #ff3368;
+                  min-width: 170px;
+                  border-radius: 4px;
+                  
+
+                  li{
+                      display:list-item!important;
+                      padding: 8px 20px!important;
+
+                      a{
+                        color: #fff;
+                        padding: 10px 20px;
+                      }
+                  }
+                }
+              }
+              @media (max-width: 991px){
+                display: grid;
+                margin-top: 40px;
+                justify-content: start;
+                position: absolute;
+                background-color: #fff;
+
+                li a {
+                  padding: 14px 23px;
+                }
+                .dropdwon,.tallOne{
+                  position: relative!important;
+
+                  li a:hover{
+                    color: yellow;
+                  }
+                }
+              }
+           }
+          }
+        }
+
+          
+        .navIcon{
+          cursor: pointer;
+          transition: ease-in-out 3s;
+          .fa-heart{
+            margin: 0 30px;
+          }
+          .fa-cart-plus::after{
+            position: absolute;
+            border-radius: 50%;
+            background-color: #f13d80;
+            width: 14px;
+            height: 14px;
+            content: "5";
+            text-align: center;
+            line-height: 15px;
+            font-size: 10px;
+            color: #fff;
+          }
+        }
+  }
+  .searchIcon{
+      width: 100%;
+      background-color: #ff3368;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      transition: ease-in-out 0.7s;
+      animation: dropdwon3 .5s;
+      position: relative;
+      z-index: 1!important;
+    .search{
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      padding: 12px 0;
+      border-radius:4px;
+    }
+    input::placeholder{
+      color: #fff!important;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    
+    .fa-times{
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 13px;
+    }
+  }
+  .navbar-light .navbar-toggler{
+    outline: none;
+  }
+@media (max-width: 991px){
+  .navIcon{
+    flex-direction: row!important;
+    order: 2;
+  }
+  .navbar-toggler-icon{
+    outline: none;
+    border: none;
+  }
+  .navbar-toggler{
+    border: none;
+    border-color: 0;
+    order: 1;
+    outline: none;
+  }
+  .navbar-brand{
+    order: 2;
+  }
+  .navLink , .navDropdown a{
+    padding: 10px 15px!important;
+  }
+  .navCollapse {
+    order: 4;
+  }
+}
+                
+@keyframes dropdwon {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 95px;
+  }
+}
+@keyframes dropdwon2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 288px;
+  }
+}
+@keyframes dropdwon3 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 48px;
+  }
+}

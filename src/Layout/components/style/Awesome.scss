@@ -1,0 +1,115 @@
+.Awesome{
+  padding: 140px 0;
+
+  .container{
+
+    .row1{
+      margin-bottom: 80px;
+      justify-content: space-between;
+
+      h2{
+        font-size: 36px;
+        color: #1a1a1a;
+        line-height: 27px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 28px;
+        text-align: left!important;
+
+        span{
+          color: #adadad;
+          font-size: 20px;
+          font-weight: 700;
+          margin-left: 60px;
+        }
+      }
+    }
+    .row2{
+
+      .carts{
+        margin-bottom: 20px;
+      
+        .text{
+          padding: 32px 0;
+          background-color: #fff;
+          transition: .5s;
+      
+          h4{
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 14px;
+          }
+      
+          h3{
+            font-weight: 300;
+            font-size: 18px;
+          }
+          a{
+            color: #ff3368;
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+            margin-top: 10px;
+            transition: .5s;
+            opacity: 0;
+      
+            i{
+              float: right;
+              font-size: 18px;
+              line-height: 26px;
+              color: #000;
+            }
+          }
+        }
+
+        &:hover{
+          box-shadow: 0 19px 38px rgba(71, 47, 47, 0), 0 15px 12px rgba(0,0,0,.04);
+        }
+
+        &:hover .text{
+          padding: 32px 32px;
+        }
+        
+        &:hover a{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+    bottom: unset;
+    top: -130px;
+  
+    @media (max-width:768px){
+      display: none;
+    }
+  }
+  .carousel-control-prev{
+    right: calc(0% + 91px);
+    left: unset;
+  }
+  .carousel-control-next::after, .carousel-control-prev::after{
+    color: #000;
+    background-color: #fff;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  .carousel-control-next::after{
+    content: "Previous";
+  }
+  .carousel-control-prev::after{
+    content: "Next";
+    border-right: 1px solid #000;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
+    display: none;
+  }
+}
+@media (max-width:576px){
+  .row2{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

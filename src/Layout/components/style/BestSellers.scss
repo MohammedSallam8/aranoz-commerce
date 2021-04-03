@@ -1,0 +1,93 @@
+.BestSellers{
+  padding: 140px 0 ;
+
+  .margin{
+    margin-bottom: 52px;
+    display: flex;
+
+    h2{
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+      line-height: 27px;
+      position: relative;
+      margin-bottom: 28px;
+    }
+    span{
+      color: #adadad;
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: 60px;
+    }
+  }
+  .alice-carousel__prev-btn, .alice-carousel__next-btn{
+    width: unset!important;
+    padding: 0!important;
+    position: absolute;
+    top: -70px;
+  
+    @media (max-width: 768px){
+      display: none!important;
+    }
+  }
+  .alice-carousel__prev-btn{
+    right: calc(0% + 104px);
+  }
+  
+  .alice-carousel__next-btn{
+    right: 0!important;
+  }
+  
+  .alice-carousel__prev-btn-item::after, .alice-carousel__next-btn-item::after{
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+    width: unset;
+    padding: 0 20px;
+  }
+  
+  .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{
+    padding: 0!important;
+  
+    span{
+      display: none;
+    }
+  }
+  
+  .alice-carousel__prev-btn-item::after{
+    content: "Next";
+    border-right: 1px solid #000;
+  }
+  .alice-carousel__next-btn-item::after{
+    content: "Previous";
+  }
+  .alice-carousel__dots{
+    display: none;
+  }
+}
+.item{
+  display: flex;
+  justify-content: center;
+
+  .item1{ 
+
+    .text{
+      padding: 35px 0 0;
+      background-color: #fff;
+      transition: .5s;
+
+      h4{
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+      h3{
+        font-weight: 300;
+        font-size: 18px;
+      }
+    }
+    &:hover .text{
+      padding-top: 30px;
+    }
+  }
+}
