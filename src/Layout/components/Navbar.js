@@ -46,7 +46,9 @@ export default function Header() {
                 <li><a href="#">Contact</a></li>
               </ul>
             </Nav>
+
           </Navbar.Collapse>
+          
           <Nav className="navIcon">
             <i class="fas fa-search"onClick={() =>setToggle(!toggle)}></i>
             <i class="far fa-heart"></i>
