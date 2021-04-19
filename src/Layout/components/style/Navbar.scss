@@ -49,11 +49,14 @@
                 display: inherit;
                 transition: ease-in-out 5s;
                 animation: dropdwon .5s;
+                overflow: hidden;
                 }
 
                 &:hover .tallOne {
                   display: inherit;
+                  transition: ease-in-out 5s;
                   animation: dropdwon2 .7s;
+                  overflow: hidden;
                 }
 
                 .dropdwon,.tallOne{
@@ -66,7 +69,7 @@
                   
 
                   li{
-                      display:list-item!important;
+                      display: list-item!important;
                       padding: 8px 20px!important;
 
                       a{
